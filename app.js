@@ -77,8 +77,8 @@ function sumArray(sumArr) { //eslint-disable-line
   var x = sumArr[0];
   var y = sumArr[1];
   var z = sumArr[2];
-  var sumOfFirstTwo = sum(x , y); // [sum, x and y is sum] [5, '2 and 3 is 5']
-  var sumOfFirstThree = sum(z , sumOfFirstTwo[0]); // [9, 'z(4) and sumoffirsttwo(5) is 9']
+  var sumOfFirstTwo = sum(x, y); // [sum, x and y is sum] [5, '2 and 3 is 5']
+  var sumOfFirstThree = sum(z, sumOfFirstTwo[0]); // [9, 'z(4) and sumoffirsttwo(5) is 9']
   return [sumOfFirstThree[0], x + ', ' + y + ', ' + z + ' was passed in as an array of numbers, and ' + sumOfFirstThree[0] + ' is their sum.'];
 }
 
@@ -100,16 +100,15 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-  var a= multArr[0];
-  var b = multArr[1];
-  var c = multArr[2];
-  for (var i = 0; i < multArr.length; i++) {
-    
-  }
+  var x = multArr[0];
+  var y = multArr[1];
+  var z = multArr[2];
+  var multiplyFirstTwo = multiply(x, y);
+  var multiplyOfThree = multiply(z, multiplyFirstTwo[0]);
+  return [multiplyOfThree[0], 'The numbers ' + x + ',' + y + ',' + z + ' have a product of ' + multiplyOfThree[0] + '.'];
 }
-
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
 
