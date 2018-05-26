@@ -79,12 +79,12 @@ function sumArray(sumArr) { //eslint-disable-line
   var z = sumArr[2];
   var sumOfFirstTwo = sum(x, y); // [sum, x and y is sum] [5, '2 and 3 is 5']
   var sumOfFirstThree = sum(z, sumOfFirstTwo[0]); // [9, 'z(4) and sumoffirsttwo(5) is 9']
-  return [sumOfFirstThree[0], x + ', ' + y + ', ' + z + ' was passed in as an array of numbers, and ' + sumOfFirstThree[0] + ' is their sum.'];
+  return [sumOfFirstThree[0], x + ',' + y + ',' + z + ' was passed in as an array of numbers, and ' + sumOfFirstThree[0] + ' is their sum.'];
 }
 
 // Here is the test for sumArray(); uncomment it to run it
 
-// testSumArray(testArray);
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
